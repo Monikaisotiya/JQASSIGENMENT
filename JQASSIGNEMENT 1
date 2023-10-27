@@ -14,7 +14,7 @@ ANS:
 >>  HTML/DOM manipulation
     CSS manipulation
     HTML event methods
-    Effects and animations
+    Effects and anim
     AJAX
     Utilities
 
@@ -32,12 +32,6 @@ ANS:
 
 ANS: 
 >> Table of Contents:
-
-       Step 1: Come up with a strategy for the slider.
-        Step 2: Update the background image in each slide.
-         Step 3: Update the text layers in each slide.
-          Step 4: Edit the button text and design in each slide.
-           Step 5: Edit the slider navigation
-
+jQuery UI consists of GUI widgets, visual effects, and themes implemented using jQuery, CSS, and HTML. jQuery UI is great for building UI interfaces for the webpages. jQueryUI provides us a slider control through the slider widget. Slider helps us to get a certain value using a given range. In this article, we will see how to animate a slider. The animate option when set to true will create an animation effect when you directly click at any point on the slider’s axis Syntax: $(".selector").slider( { animate: value } );
 
 
