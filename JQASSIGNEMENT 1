@@ -34,4 +34,84 @@ ANS:
 >> Table of Contents:
 jQuery UI consists of GUI widgets, visual effects, and themes implemented using jQuery, CSS, and HTML. jQuery UI is great for building UI interfaces for the webpages. jQueryUI provides us a slider control through the slider widget. Slider helps us to get a certain value using a given range. In this article, we will see how to animate a slider. The animate option when set to true will create an animation effect when you directly click at any point on the slider’s axis Syntax: $(".selector").slider( { animate: value } );
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Slider</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slide">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+    <script src="script.js">
+   body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.slider {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+}</script>
+</body>
+</html>
+
+
+.slide {
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+[4]  Event bubbling tickling example
+
+ANS:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Example</title>
+</head>
+<body>
+    <div id="outer" style="padding: 20px; border: 1px solid #ccc;">
+        <div id="middle" style="padding: 20px; border: 1px solid #00f;">
+            <div id="inner" style="padding: 20px; border: 1px solid #f00;">
+                <button id="button">Click Me</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Event handler function
+        function handleEvent(event) {
+            console.log(`Event handled by ${event.currentTarget.id}`);
+        }
+
+        // Attach event listeners to each element
+        document.getElementById('inner').addEventListener('click', handleEvent);
+        document.getElementById('middle').addEventListener('click', handleEvent);
+        document.getElementById('outer').addEventListener('click', handleEvent);
+    </script>
+</body>
+</html>
+
 
